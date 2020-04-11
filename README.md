@@ -28,7 +28,7 @@ I hate to open-source code which only worked on proprietary software.
 
 ## Installation :
 
-Copy in your [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html) environement :
+Copy in your [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html) environment :
 * The .slx files to the ./model directory.
 * The (scenario)[./scenario] to the ./scenario directory.
 
