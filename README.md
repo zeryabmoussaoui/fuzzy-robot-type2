@@ -3,7 +3,7 @@
 # Fuzzy Robot Type2
 This is an implementation of Fuzzy Logic Control Type 2 for Mobile Robot.
 It is based on : 
-* The [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html) environement 
+* The [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html) environment 
 * The [IT2-FLS](https://github.com/zeryabmoussaoui/type-2-fuzzy-logic-systems-matlab-toolbox) library.
 
 It performs Goal Reach to a defined landmark, with obstacle Avoidance.
