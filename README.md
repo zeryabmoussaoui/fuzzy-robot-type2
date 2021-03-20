@@ -30,8 +30,8 @@ I hate to open-source code which only worked on proprietary software.
 
 Copy in your [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html) environment :
 * The .slx files to the ./model directory.
-* The (scenario)[./scenario] to the ./scenario directory.
-* The (loadParameters)[./loadRobotParameters.m] to the ./data directory.
+* The [scenario](./scenario) to the ./scenario directory.
+* The [loadParameters](./loadRobotParameters.m) to the ./data directory.
 
 ## Execution
 
