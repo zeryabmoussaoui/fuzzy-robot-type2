@@ -1,0 +1,77 @@
+[System]
+Name='avoidanceT2'
+Type='sugeno'
+Version=2.0
+NumInputs=3
+NumOutputs=2
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+TypeRedMethod='Karnik-Mendel'
+
+[Input1]
+Name='left'
+Range=[0 85]
+NumMFs=3
+MF1U='CloseU':'trimf',[-34 0 34 1]
+MF1L='CloseL':'trimf',[-25.5 0 25.5 0.6]
+MF2U='AverageU':'trimf',[8.5 30 80 1]
+MF2L='AverageL':'trimf',[17 30 65 0.5]
+MF3U='FarU':'trimf',[30 85 100 1]
+MF3L='FarL':'trimf',[50 85 100 0.5]
+
+[Input2]
+Name='middle'
+Range=[0 85]
+NumMFs=3
+MF1U='CloseU':'trimf',[-34 0 34 1]
+MF1L='CloseL':'trimf',[-25.5 0 25.5 0.6]
+MF2U='AverageU':'trimf',[8.5 30 80 1]
+MF2L='AverageL':'trimf',[17 30 65 0.5]
+MF3U='FarU':'trimf',[30 85 100 1]
+MF3L='FarL':'trimf',[50 85 100 0.5]
+
+[Input3]
+Name='right'
+Range=[0 85]
+NumMFs=3
+MF1U='CloseU':'trimf',[-34 0 34 1]
+MF1L='CloseL':'trimf',[-25.5 0 25.5 0.6]
+MF2U='AverageU':'trimf',[8.5 30 80 1]
+MF2L='AverageL':'trimf',[17 30 65 0.5]
+MF3U='FarU':'trimf',[30 85 100 1]
+MF3L='FarL':'trimf',[50 85 100 0.5]
+
+[Output1]
+Name='RotationCorrection'
+CrispInterval='interval'
+Range=[-100 100]
+NumMFs=5
+MF1='BN':'constant',[-70 -100]
+MF2='SN':'constant',[-15 -30]
+MF3='Z':'constant',[0 0]
+MF4='SP':'constant',[30 15]
+MF5='BP':'constant',[100 70]
+
+[Output2]
+Name='IsTranslation'
+CrispInterval='interval'
+Range=[-1 1]
+NumMFs=2
+MF1='false':'constant',[0 0.2]
+MF2='true':'constant',[0.8 1]
+
+[Rules]
+
+3 3 3, 3 2 (1) : 1
+2 3 3, 2 2 (1) : 1
+3 3 2, 4 2 (1) : 1
+-1 2 -1, 5 1 (1) : 1
+1 2 2, 1 2 (1) : 1
+2 2 1, 5 2 (1) : 1
+3 3 1, 4 2 (1) : 1
+1 3 3, 2 2 (1) : 1
+0 1 0, 5 1 (1) : 1
