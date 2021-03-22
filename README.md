@@ -33,6 +33,8 @@ Copy in your [Mission On Mars Robot Challenge](https://fr.mathworks.com/academia
 * The [scenario](./scenario) to the ./scenario directory.
 * The [loadParameters](./loadRobotParameters.m) to the ./data directory.
 
+Load the [T2_avoidance.t2fis](./T2_avoidance.t2fis) example controller using `readt2fis` function
+
 ## Execution
 
 Follow the [Mission On Mars Robot Challenge](https://fr.mathworks.com/content/dam/mathworks/mathworks-dot-com/academia/student-challenge/mission-on-mars/Competition_Mission_On_Mars_Robot_Challenge_2016_English.pdf) documentation.
